@@ -6,11 +6,20 @@ with open('input1.txt') as f:
     f.close()
 
 
-def sol1():
+def part1():
     for num1 in nums:
         for num2 in nums:
             if num1 + num2 == 2020:
                 return num1 * num2
 
 
-print(sol1())
+def part2():
+    for num1 in nums:
+        for num2 in nums:
+            for num3 in nums:
+                if num1 + num2 + num3 == 2020:
+                    return num1 * num2 * num3
+
+
+print(part1())
+print(part2())
